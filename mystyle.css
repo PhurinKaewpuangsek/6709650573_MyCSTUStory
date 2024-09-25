@@ -1,0 +1,202 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;  /*ใช้font Press Start 2P กับทุกอย่าง*/
+    
+}
+
+nav
+{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;                  /*กำหนดให้contentห่างจากขอบ*/
+}
+
+.topbar a                         /*เข้าถึงtag a ในส่วนของ topbar*/
+{
+   text-decoration: none;
+   color: black;
+   font-weight: bold;
+   font-size: 18px;
+}
+
+.topbar img                     /*เข้าถึงtag img ในส่วนของ topbar*/
+{
+   width: 35px;
+   position: absolute;
+   top: -2px;
+
+}
+
+.menu                         /*เข้าถึงclass menu*/
+{
+   display: flex;
+   list-style: none;
+}
+
+.menu li                      /*เข้าถึงtag li ในส่วนของ menu*/
+{
+   margin-left: 30px;         /*กำหนดระยะห่างภายนอกด้านซ้าย*/  
+}
+
+.menu li a                            
+{
+   text-decoration: none;     /*เอาunderlineของmenuออก*/
+   color: black;
+}
+
+.banner
+{
+  
+   background-image: url(/6709650573_MyCSTUStory/resources/color1.PNG);
+   background-size: 50px 200px;
+   color: white;            /*สีของตัวอักษร*/
+   -webkit-text-stroke: 1.3px black;
+   height: 200px;             /*ความสูงส่วนกล่องเหลือง*/
+   border: 5px solid rgb(0, 0, 0);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 20px;
+   
+}
+
+.banner-detail
+{
+    width: 1000px;
+    height: 150px;
+    text-align: center;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    background-image: url(/6709650573_MyCSTUStory/resources/ps1bios.jpg);
+    background-size: cover;
+
+}
+
+.banner-detail img        /*เข้าถึงtag img ในส่วนของ banner-detail*/
+{
+   width: 200px;
+}
+
+.banner-decorate1 img     /*เข้าถึงtag img ในส่วนของ banner-decorate1*/
+{
+    display: flex;
+    justify-content: center;  /* จัดแนวภาพให้อยู่กึ่งกลางในแนวนอน */
+    align-items: center;
+    width: 200px;
+    position: absolute;
+    top: 42px;
+}
+
+.banner-decorate2 img    /*เข้าถึงtag img ในส่วนของ banner-decorate2*/
+{
+    display: flex;
+    justify-content: center;  /* จัดแนวภาพให้อยู่กึ่งกลางในแนวนอน */
+    align-items: center;
+    width: 190px;
+    position: absolute; /* ใช้ทำให้Objectเคลื่นไหวได้อิสระ */
+    left: 25px; 
+    top: 48px; 
+    
+}
+
+main
+{
+    display: grid; /*สร้างgrid*/
+    grid-template-columns: 1fr 1fr 1fr;  /*แบ่งColumnเป็น3อัน*/
+    
+}
+
+.BOX1                    /*เข้าถึงส่วนของBOX1*/
+{
+    background-color: rgb(255, 255, 255);
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    height: 500px;
+
+}
+
+.chocobo img           /*เข้าถึงส่วนของภาพchocobo*/
+{
+    position: absolute;
+    bottom: 100px;
+    left: 30px;
+}
+
+.BOX2                 /*เข้าถึงส่วนของ class BOX2*/
+{
+    background-image: url(/6709650573_MyCSTUStory/resources/statbg.PNG);
+    background-size: 50px 50px;
+    border: 5px solid rgb(190, 215, 253);
+    border-radius: 20px;
+    height: 500px;
+    
+}
+
+.BOX2 img             /*เข้าถึงส่วนของ class BOX2 ทุกtag img*/
+{
+    width: 150px;
+}
+
+.xpbar img           /*เข้าถึงส่วนของ class xpbar tag img*/
+{
+   width: 300px;
+   position: absolute;
+   left: 650px;
+   top: 270px;
+}
+
+.xpbar2 img          /*เข้าถึงส่วนของ class xpbar2 tag img*/
+{
+    width: 300px;
+    position: absolute;
+    left: 650px;
+    top: 400px;  
+}
+
+.BOX3               /*เข้าถึงส่วนของ class BOX3*/
+{
+    background-color: rgb(255, 255, 255);
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    height: 500px;
+
+}
+
+main div           /*เข้าถึงส่วนของ tag main tag div*/
+{
+    padding: 20px;
+    
+}
+
+main div p         /*เข้าถึงส่วนของ tag main tag div tag p*/
+{
+    margin-top: 10px;
+}
+
+main li            /*เข้าถึงส่วนของ tag main tag div tag li*/
+{
+    padding: 10px;
+}
+
+main img          /*เข้าถึงส่วนของ tag main tag img*/
+{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+footer           /*เข้าถึงส่วนของ tag footer*/
+{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
