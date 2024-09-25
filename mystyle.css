@@ -217,6 +217,18 @@ footer
 
 }
 
+.menu li, .topbar a
+{
+    text-shadow: 2px 2px #666;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.menu li:hover, .topbar a:hover
+{
+    color: #ffffff;
+    text-shadow: 2px 2px #2DE7F4, 4px 4px #0095EA;
+}
+
 .journeybanner
 {
     background-image: url(/6709650573_MyCSTUStory/resources/bg3.png);
@@ -271,15 +283,27 @@ footer
     text-align: center;
     padding: 20px;
     font-size: 15px;
-    box-shadow: 8px 8px 0px 0px #000;  
-    transform: translate(-3px, -3px);  
-    transition: all 0.2s ease;
-
+    box-shadow: 7px 7px 0px 0px #000, 14px 14px 0px 0px #666, 21px 21px 0px 0px #888;
+    transform: translate(-7px, -7px);
+    transition: all 0.3s ease;
 }
 
 .yearbox img
 {
     width: 15vh;
+}
+
+.yearbox h3
+{
+    color: #000;
+    text-shadow: 2px 2px #666;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.yearbox h3:hover
+{
+    color: #ff6347;
+    text-shadow: 2px 2px #000, 4px 4px #666;
 }
 
 .yeartext
