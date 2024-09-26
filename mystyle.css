@@ -14,6 +14,28 @@ nav
   width: 100%;     
   z-index: 1000;    
   position: fixed;
+  background: rgba(255, 255, 255, 0.308); /* White with slight transparency */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Soft border */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */ 
+}
+
+.topbar
+{
+    display: inline-block;
+    animation: bounce 1s infinite alternate;  
+}
+
+@keyframes bounce
+{
+    from 
+    {
+        transform: translateY(0);
+    }
+    to 
+    {
+        transform: translateY(-5px);
+    }
 }
 
 .topbar a                         
@@ -28,8 +50,8 @@ nav
 {
    width: 150px;
    position: fixed;
-   top: -20px;
-   left: 248px
+   top: -49px;
+   left: 220px
 }
 
 .menu                         
@@ -49,16 +71,14 @@ nav
    color: black;
 }
 
-.journeybody
+.journeybody 
 {
     height: 200vh;
 }
 
-.journeynav
+.indexbody
 {
-    background-color: #ffffff98;
-    border: 2px solid #15151E;
-
+   height: 100vh;
 }
 
 .menu li, .topbar a
@@ -85,8 +105,19 @@ nav
     justify-content: center;
     align-items: center;
     padding-bottom: 20px;
-    
-    
+}
+
+.indexbanner
+{
+    background-image: url(/6709650573_MyCSTUStory/resources/bg4.gif);
+    background-repeat: no-repeat;
+    background-size: 200vh;
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding-top: 80px;
+    display: flex;
 }
 
 .banner-info
@@ -99,9 +130,76 @@ nav
 
 .banner-info h1
 {
+    font-size: 48px;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow 
+{
+    from {
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+    to {
+        text-shadow: 2px 2px 15px rgba(255, 255, 255, 1);
+    }
+}
+
+.indexbanner-info
+{
+    width: 100vh;
+    height: 50vh;
+    color: #ffffff;
+    -webkit-text-stroke: 0.5px rgb(0, 0, 0);
+    padding: 100px;
+    
+}
+
+.indexbanner-info h1
+{
+   font-size: 42px;
+   text-align: center;
+   margin-bottom: 5rem;
+}
+
+.indexbanner a 
+{
+   display: block;
+   width: 220px;
+   height: 40px;
+   margin: 0.5rem;
+   margin-top: 2rem;
+   margin-left: auto;
+   margin-right: auto;
+   background-color: #1a1a1a;
+   color: #f2f2f2;
+   padding: 0.5rem 1.5rem;
+   text-decoration: none; 
+   text-align: center;
+   border: 3px solid #f2f2f2;
+   border-radius: 4px;
+   transition: background-color 0.2s ease, color 0.2s ease;
+   margin-bottom: 2rem;
+}
+
+ .indexbanner a:hover 
+ {
+   background-color: #f2f2f2; 
+   color: #1a1a1a; 
+   border-color: #1a1a1a; 
+ }
+
+.banner-info h1
+{
     text-align: center;
     font-size: 50px;
     margin: 50px;
+}
+
+.indexbanner-info p
+{
+    margin: 20px;
 }
 
 .banner-info p
