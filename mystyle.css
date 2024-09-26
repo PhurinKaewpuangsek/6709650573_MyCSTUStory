@@ -4,7 +4,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Press Start 2P', cursive;  
-    
 }
 
 nav
@@ -23,7 +22,6 @@ nav
    color: black;
    font-weight: bold;
    font-size: 18px;
-   
 }
 
 .topbar img                     
@@ -32,8 +30,6 @@ nav
    position: fixed;
    top: -20px;
    left: 248px
-
-
 }
 
 .menu                         
@@ -51,158 +47,6 @@ nav
 {
    text-decoration: none;     
    color: black;
-}
-
-.banner
-{
-  
-   background-image: url(/6709650573_MyCSTUStory/resources/color1.PNG);
-   background-size: 50px 200px;
-   color: white;            
-   -webkit-text-stroke: 1.3px black;
-   height: 200px;             
-   border: 5px solid rgb(0, 0, 0);
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   border-radius: 20px;
-   
-   
-}
-
-.banner-detail
-{
-    width: 1000px;
-    height: 150px;
-    text-align: center;
-    border: 5px solid rgb(0, 0, 0);
-    border-radius: 20px;
-    background-image: url(/6709650573_MyCSTUStory/resources/ps1bios.jpg);
-    background-size: cover;
-
-}
-
-.banner-detail img        
-{
-   width: 200px;
-}
-
-.banner-decorate1 img     
-{
-    width: 200px;
-    position: fixed;
-    top: 68px;
-}
-
-.banner-decorate2 img    
-{
-    display: flex;
-    justify-content: center;  
-    align-items: center;
-    width: 190px;
-    position: fixed; 
-    left: 25px; 
-    top: 68px; 
-    
-}
-
-main
-{
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr;  /*แบ่งColumnเป็น3อัน*/
-    
-}
-
-.BOX1                    
-{
-    background-color: rgb(255, 255, 255);
-    border: 5px solid rgb(0, 0, 0);
-    border-radius: 20px;
-    height: 500px;
-
-}
-
-.chocobo img           
-{
-    position: absolute;
-    bottom: 100px;
-    left: 30px;
-}
-
-.BOX2                 
-{
-    background-image: url(/6709650573_MyCSTUStory/resources/statbg.PNG);
-    background-size: 50px 50px;
-    border: 5px solid rgb(190, 215, 253);
-    border-radius: 20px;
-    height: 500px;
-    
-}
-
-.BOX2 img             
-{
-    width: 150px;
-}
-
-.xpbar img          
-{
-   width: 300px;
-   position: absolute;
-   left: 650px;
-   top: 270px;
-}
-
-.xpbar2 img          
-{
-    width: 300px;
-    position: absolute;
-    left: 650px;
-    top: 400px;  
-}
-
-.BOX3               
-{
-    background-color: rgb(255, 255, 255);
-    border: 5px solid rgb(0, 0, 0);
-    border-radius: 20px;
-    height: 500px;
-
-}
-
-main div          
-{
-    padding: 20px;
-    
-}
-
-main div p         
-{
-    margin-top: 10px;
-}
-
-main li            
-{
-    padding: 10px;
-}
-
-main img          
-{
-    width: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-footer           
-{
-    background-color: black;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
 
 .journeybody
@@ -227,6 +71,8 @@ footer
 {
     color: #ffffff;
     text-shadow: 2px 2px #2DE7F4, 4px 4px #0095EA;
+    
+    
 }
 
 .journeybanner
@@ -273,12 +119,10 @@ footer
     padding: 50px;
     width: 100%;
     height: 50%;
-    /* border: 1px solid rgb(0, 60, 255); */
 }
 
 .yearbox
 {
-    /* border: 1px solid red; */
     background-color: #e6e6e6;
     text-align: center;
     padding: 20px;
@@ -311,9 +155,24 @@ footer
     list-style-type: none;
     text-align: left;
     padding: 20px;
+    
 }
 
 .yeartext li
 {
     margin-bottom: 15px;
+}
+
+footer
+{
+    background: black;
+    padding: 1rem;
+    text-align: center;
+    font-size: 10px;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    height: 2%;
+    position: relative;
+    bottom: -17vh;
 }
