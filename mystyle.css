@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Press Start 2P', cursive;  
+    font-family: 'Press Start 2P', cursive;
 }
 
 nav
@@ -20,7 +20,7 @@ nav
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */ 
 }
 
-.topbar
+.topbar img
 {
     display: inline-block;
     animation: bounce 1s infinite alternate;  
@@ -50,8 +50,8 @@ nav
 {
    width: 150px;
    position: fixed;
-   top: -49px;
-   left: 220px
+   top: -21.5px;
+   left: 247px
 }
 
 .menu                         
@@ -78,7 +78,7 @@ nav
 
 .indexbody
 {
-   height: 100vh;
+   height: 100%;
 }
 
 .menu li, .topbar a
@@ -153,7 +153,6 @@ nav
     color: #ffffff;
     -webkit-text-stroke: 0.5px rgb(0, 0, 0);
     padding: 100px;
-    
 }
 
 .indexbanner-info h1
@@ -183,12 +182,12 @@ nav
    margin-bottom: 2rem;
 }
 
- .indexbanner a:hover 
- {
+.indexbanner a:hover 
+{
    background-color: #f2f2f2; 
    color: #1a1a1a; 
    border-color: #1a1a1a; 
- }
+}
 
 .banner-info h1
 {
@@ -259,6 +258,110 @@ nav
 .yeartext li
 {
     margin-bottom: 15px;
+}
+
+.aboutme
+{
+    background: linear-gradient(to bottom, #0d1b2a, #1b263b, #415a77); /* Space-like gradient */
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.box1
+{
+    display: flex;
+    background-color: rgba(13, 27, 42, 0.85);
+    color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    width: 70%;
+    height: 40vh;
+    margin-left: 200px;
+    margin-top: 50px;
+    box-shadow: 0 0 50px rgba(70, 130, 180, 0.8);
+    transform: translate(-7px, -7px);
+    transition: all 0.3s ease;
+    
+}
+
+.box2
+{
+    display: flex;
+    background-color: rgba(13, 27, 42, 0.85);
+    color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    width: 70%;
+    height: 40vh;
+    margin-left: 200px;
+    margin-top: 50px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+    transform: translate(-7px, -7px);
+    transition: all 0.3s ease;
+}
+
+.about-text2 video
+{
+    width: 420px;
+    margin-left: 520px;
+    margin-top: -70px;
+    border-radius: 10px;
+    border: 3px solid white;
+}
+
+.box1 img
+{
+    width: 290px;
+    height: 290px;
+    object-fit: cover;
+    margin-right: 20px;
+    image-rendering: pixelated;
+}
+
+.about-text1 h2
+{
+    font-size: 36px;
+    padding-bottom: 20px;
+    padding-top: 5px;
+}
+
+.about-text2 h2
+{
+    font-size: 36px;
+    padding-bottom: 20px;
+    padding-top: 5px;
+}
+  
+.about-text1 p, .about-text2 p
+{
+    font-size: 15px;
+    padding: 5px;
+}
+
+.progress-container 
+{
+    background-color: #415a77;;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 10px 0;
+    border: 4px solid #000;
+}
+
+.progress-bar 
+{
+    height: 20px;
+    background-color: #1f6f8b;
+    width: 25%;
+    text-align: center;
+}
+
+.progress-bar p
+{
+    font-size: 10px;
+    padding: 5px;
 }
 
 footer
