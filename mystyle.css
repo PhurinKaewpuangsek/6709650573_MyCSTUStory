@@ -6,6 +6,11 @@
     font-family: 'Press Start 2P', cursive;
 }
 
+html 
+{
+    scroll-behavior: smooth;
+}
+
 nav
 {
   display: flex;
@@ -81,6 +86,11 @@ nav
    height: 100%;
 }
 
+.futurebody
+{
+   height: 100%;
+}
+
 .menu li, .topbar a
 {
     text-shadow: 2px 2px #666;
@@ -91,8 +101,6 @@ nav
 {
     color: #ffffff;
     text-shadow: 2px 2px #2DE7F4, 4px 4px #0095EA;
-    
-    
 }
 
 .journeybanner
@@ -120,6 +128,19 @@ nav
     display: flex;
 }
 
+.futurebanner
+{
+    background-image: url(/6709650573_MyCSTUStory/resources/bg6.jpg);
+    background-repeat: no-repeat;
+    background-size: 200vh;
+    height: 130vh;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    padding-top: 80px;
+    display: flex;
+}
+
 .banner-info
 {
     width: 100vh;
@@ -133,15 +154,17 @@ nav
     font-size: 48px;
     color: #ffffff;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    animation: glow 1.5s infinite alternate;
+    animation: glow1 1.5s infinite alternate;
 }
 
-@keyframes glow 
+@keyframes glow1
 {
-    from {
+    from 
+    {
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
     }
-    to {
+    to 
+    {
         text-shadow: 2px 2px 15px rgba(255, 255, 255, 1);
     }
 }
@@ -153,6 +176,54 @@ nav
     color: #ffffff;
     -webkit-text-stroke: 0.5px rgb(0, 0, 0);
     padding: 100px;
+}
+
+.futurebanner-info
+{
+    width: 45%;
+    height: 85%;
+    padding: 20px;
+    background: rgba(0, 0, 50, 0.7); 
+    border: 2px solid rgba(0, 255, 255, 0.7);
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.7), 0 0 50px rgba(0, 255, 255, 0.5);
+    color: white;
+    border-radius: 10px;
+    text-align: left;
+    animation: glow2 1.5s infinite alternate;
+    align-content: center;
+}
+
+@keyframes glow2
+{
+    from 
+    {
+        box-shadow: 0 0 30px rgba(0, 255, 255, 0.7);
+    }
+    to 
+    {
+        box-shadow: 0 0 50px rgba(0, 255, 255, 0.5);
+    }
+}
+
+.futurebanner-info h1 
+{
+    font-size: 2rem;
+    text-shadow: 0 0 8px rgba(0, 255, 255, 0.8);
+    margin-bottom: 30px;
+}
+
+.futurebanner-info h2
+{
+    font-size: 1rem;
+    text-shadow: 0 0 8px rgba(0, 255, 255, 0.8);
+}
+
+.futurebanner-info p
+{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-family: 'Roboto Mono', monospace;
+    padding: 30px;
 }
 
 .indexbanner-info h1
@@ -252,7 +323,6 @@ nav
     list-style-type: none;
     text-align: left;
     padding: 20px;
-    
 }
 
 .yeartext li
@@ -260,7 +330,7 @@ nav
     margin-bottom: 15px;
 }
 
-.aboutme
+#aboutme
 {
     background: linear-gradient(to bottom, #0d1b2a, #1b263b, #415a77); /* Space-like gradient */
     color: white;
@@ -303,11 +373,12 @@ nav
     transition: all 0.3s ease;
 }
 
-.about-text2 video
+video
 {
-    width: 420px;
+    display: flex;
+    width: 430px;
     margin-left: 520px;
-    margin-top: -70px;
+    margin-top: -240px;
     border-radius: 10px;
     border: 3px solid white;
 }
@@ -361,6 +432,38 @@ nav
 .progress-bar p
 {
     font-size: 10px;
+    padding: 5px;
+}
+
+.quote-container 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.quote 
+{
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #333; 
+    padding: 20px;
+    border: 1px solid #333;
+    background: rgba(255, 255, 255, 0.8); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.badge
+{
+    padding: 10px;
+}
+
+
+.badge img
+{
+    width: 80px;
+    height: 80px;
     padding: 5px;
 }
 
