@@ -25,24 +25,6 @@ nav
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.topbar img
-{
-    display: inline-block;
-    animation: bounce 1s infinite alternate;  
-}
-
-@keyframes bounce
-{
-    from 
-    {
-        transform: translateY(0);
-    }
-    to 
-    {
-        transform: translateY(-5px);
-    }
-}
-
 .topbar a                         
 {
    text-decoration: none;
@@ -53,27 +35,131 @@ nav
 
 .topbar img                     
 {
-   width: 150px;
-   position: fixed;
-   top: -21.5px;
-   left: 247px
+   display: none;
 }
 
-.menu                         
+.menuwrap
 {
-   display: flex;
+    display: block;
+    max-height: 0; /* Start with hidden content */
+    overflow: hidden;
+    transition: max-height 0.5s ease-out; /* Smooth transition */
+    margin-left: -150px;
+    margin-top: 20px;
+}
+
+.menuwrap .menu                         
+{
    list-style: none;
 }
 
-.menu li                     
+.menuwrap .menu li                     
 {
-   margin-left: 30px;         
+    margin: 10px 0;         
 }
 
-.menu li a                            
+.menuwrap .menu li a                            
 {
    text-decoration: none;     
    color: black;
+   padding: 10px;
+   display: block;
+}
+
+.menu-toggle
+{
+    display: none;
+}
+
+.menu-icon
+{
+    display: inline-block;
+    margin-left: 200px;
+    cursor: pointer;
+}
+
+.menu-icon span
+{
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #000000;
+    margin: 5px 0;
+    transition: transform 0.3s ease; /* Smooth transition for the icon */
+}
+
+/* Transform the hamburger icon into an "X" when checked */
+.menu-toggle:checked + .menu-icon span:nth-child(1)
+{
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle:checked + .menu-icon span:nth-child(2)
+{
+    opacity: 0; /* Hide the middle line */
+}
+
+.menu-toggle:checked + .menu-icon span:nth-child(3)
+{
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Smoothly expand the menu when checked */
+.menu-toggle:checked + .menu-icon + .menuwrap {
+    max-height: 300px; /* Adjust this value depending on the number of items */
+    transition: max-height 0.5s ease-in;
+}
+
+/* Responsive styles for nav bar */
+@media (min-width: 780px)
+{
+    .menuwrap {
+        max-height: none; /* Ensure it's always visible */
+    }
+
+    .menuwrap ul {
+        display: flex;
+    }
+
+    .menuwrap ul li {
+        margin: 0 15px;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .topbar img
+    {
+       width: 150px;
+       position: fixed;
+       top: -5.5px;
+       left: 230px
+    }
+
+    .topbar img
+    {
+      display: inline-block;
+      animation: bounce 1s infinite alternate;
+    }
+
+    @keyframes bounce{
+       from 
+       {
+          transform: translateY(0);
+       }
+       to 
+       {
+        transform: translateY(-5px);
+       }
+    }
 }
 
 .journeybody 
@@ -91,13 +177,13 @@ nav
    height: 100%;
 }
 
-.menu li, .topbar a
+.menuwrap .menu li, .topbar a
 {
     text-shadow: 2px 2px #666;
     transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
-.menu li:hover, .topbar a:hover
+.menuwrap .menu li:hover, .topbar a:hover
 {
     color: #ffffff;
     text-shadow: 2px 2px #2DE7F4, 4px 4px #0095EA;
